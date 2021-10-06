@@ -1,0 +1,40 @@
+.App{
+  width: 40%;
+  margin:40px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 40px;
+  background: #0984e3;
+  box-shadow:  5px 5px 24px #0766af,
+              -5px -5px 24px #0ba2ff;
+}
+
+.App h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom:50px;
+  color: #25CCF7;
+  text-shadow: 1px -1px 2px #1fabcf,
+  -1px 1px 2px #2bedff;
+  animation-name: title;
+  animation: title 5s infinite;
+}
+
+@keyframes title {
+  from {top: 0%;}
+  to {bottom: 100%;}
+}
+
+@media screen and (max-width: 992px) {
+  .App{
+    width: 80%;
+  }
+
+  .App h1{
+    font-size: 45px;
+  }
+}
+
+
+
+

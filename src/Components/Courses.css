@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+.course-name{
+    flex: 2;
+    text-align: left;
+    font-family: 'Handlee', cursive;
+    text-transform: capitalize;
+    color: #7ed6df;
+    text-shadow: 1px 1px 0px #010202,
+    -1px -1px 0px #fbffff;
+}
+
+
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 8px 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(145deg, #0a8df3, #0877cc);
+    box-shadow:  5px 5px 24px #0766af,
+                -5px -5px 24px #0ba2ff;
+}
+
+i{
+    margin: 0 .2rem;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    
+    
+}
+
+i.edit{
+    background-color: #EE5A24;
+    color: #f9ca24;
+    text-shadow: 1px 1px 0px #020200,
+    -1px -1px 0px #ffff48;
+    padding-top: 6px;
+    padding-left: 3px;
+}
+
+i.delet{
+    background-color: #EA2027;
+    text-shadow: 1px 1px 0px #030202,
+    -1px -1px 0px #ffffff;
+    padding-top: 5px;
+    padding-left: 2px;
+    color: #FC427B;
+}
+
+.course-udated{
+    color: #fff;
+    font-size: 18px;
+    background: #0984e3;
+    box-shadow: inset 21px 21px 42px #0877cc,
+            inset -21px -21px 42px #0a91fa;
+    border: none;
+    padding: 10px;
+    width: 70%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.btn-update{
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;   
+    padding: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    background: #0984e3;
+    box-shadow: 1px -1px 2px #0a94fe,
+    -1px 1px 2px #0874c8;
+    color: #ffdd59;
+    text-shadow: -1px -1px 2px #e0c24e,
+    1px 1px 2px #fff864;
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    ul{
+        width: 100%;
+    }
+
+    .course-udated{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 40px;
+    }
+}
