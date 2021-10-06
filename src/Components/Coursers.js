@@ -20,16 +20,21 @@ export default class Coursers extends Component {
 
   submitEdit = (e) =>{
     e.preventDefault();
-    this.props.editCourse(this.props.index,this.input.value)
-    this.ToggleState();
-    swal('Good Job' , 'your course is updated with success' , 'success')
+    if(this.input.value === ""){
+      alert('input vide')
+    }else{
+      this.props.editCourse(this.props.index,this.input.value)
+      this.ToggleState();
+      swal('Good Job' , 'your course is updated with success' , 'success')
+    }
+    
 
   }
 
   UpdateVlaue = ()=>{
         return(
           <form >
-            <input ref={(v)=>{this.input = v}} defaultValue={this.props.data.name} className="course-udated" type="text"/>
+            <input required ref={(v)=>{this.input = v}} defaultValue={this.props.data.name} className="course-udated" type="text"/>
             <input onClick={this.submitEdit} type='submit' className="btn-update" value="update"/>
           </form>
     
